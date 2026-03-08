@@ -1,0 +1,71 @@
+# -------------------------
+# macOS system files
+# -------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# When opening vim project folder in Finder
+.fseventsd
+.DocumentRevisions-V100
+
+# -------------------------
+# Vim temporary files
+# -------------------------
+# Vim swap files
+*.swp
+*.swo
+*.swm
+*.swn
+
+# Vim backup files
+*~
+*.bak
+*.tmp
+*.orig
+
+# Session files
+Session.vim
+
+# View files
+view/*
+views/*
+
+# -------------------------
+# Vim-Plug / Plugin Dev
+# -------------------------
+# Don't ignore your plugin itself!
+# But if you test other plugins locally:
+plugged/
+
+# -------------------------
+# Neovim metadata (if you test plugin in nvim)
+# -------------------------
+# Optional: local state & cache
+.cache/
+.state/
+
+# Neovim backup/swap
+*.nvimlog
+
+# -------------------------
+# Python (if your plugin uses python or dev scripts)
+# -------------------------
+__pycache__/
+*.pyc
+
+# -------------------------
+# Node (if using js tooling, e.g., LSP server experiments)
+# -------------------------
+node_modules/
+npm-debug.log
+
+# -------------------------
+# Build artifacts (if your plugin generates files)
+# -------------------------
+dist/
+build/
