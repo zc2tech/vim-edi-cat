@@ -12,7 +12,7 @@ set filetype=edifact    " for edifact
 ## Install
 - Don't forget to uninstall other plugin that may conflict with this plugin
 for editing .x12 .edi .edifact files.
-- Edit ~/.vimrc, put entry between plug#bing and plug#end
+- Edit ~/.vimrc, put entry between plug#begin and plug#end
     ```
     Plug 'zc2tech/vim-edi-cat'
     ```
