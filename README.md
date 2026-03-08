@@ -14,7 +14,7 @@ set filetype=edifact    " for edifact
 for editing .x12 .edi .edifact files.
 - Edit ~/.vimrc, put entry between plug#bing and plug#end
     ```
-    Plug 'mortonfox/nerdtree-clip'
+    Plug 'zc2tech/vim-edi-cat'
     ```
 - Run ':PlugInstall' in VIM command mode
 
