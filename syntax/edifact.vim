@@ -14,8 +14,8 @@ syntax match edifactElementSep /[+:>^']/ contained nextgroup=edifactElementNumbe
 
 syntax match edifactHeaderSegment     /\v^\W*(UNA|UNB|UNH|BGM|UNT|UNZ)/ nextgroup=edifactElementSep
 
-syntax match edifactElementNumber  /\v[0-9\.]+/ contained nextgroup=edifactElementSep
-syntax match edifactElementString  /\v[^\+:>\^']*[^0-9*\+:>\^'][^\+:>\^']*/ contained nextgroup=edifactElementSep
+syntax match edifactElementNumber  /\v[\-]?[0-9\.]+/ contained nextgroup=edifactElementSep
+syntax match edifactElementString  /\v[^\+:>\^']*[^0-9\-*\+:>\^'][^\+:>\^']*/ contained nextgroup=edifactElementSep
 syntax match edifactSupportClass      /\v^\W*(RFF\+ON|IT1|OTI|PO1|POC|HL)/ nextgroup=edifactElementSep
 
 syntax match edifactConstSegment      /\v^\W*(NAD|QTY)/ nextgroup=edifactElementSep

@@ -10,8 +10,8 @@ syntax match x12SegmentID         /\v^\s*\w{2,4}/ nextgroup=x12ElementSep
 " Element separator: *, ^, >
 syntax match x12ElementSep /\v[\*\^>~]/ contained nextgroup=x12ElementNumber,x12ElementString,x12ElementSep
 
-syntax match x12ElementNumber  /\v[0-9\.]+/ contained nextgroup=x12ElementSep
-syntax match x12ElementString  /\v[^\*\^>~]*[^0-9*\^>~][^\*\^>~]*/ contained nextgroup=x12ElementSep
+syntax match x12ElementNumber  /\v[\+\-]?[0-9\.]+/ contained nextgroup=x12ElementSep
+syntax match x12ElementString  /\v[^\*\^>~]*[^0-9+\-.\*\^>~]+[^\*\^>~]*/ contained nextgroup=x12ElementSep
 
 " " support.class
 syntax match x12SupportClass      /\v^\W*(HL|OTI|PO1|REF\*PO|POC|RCD)/ nextgroup=x12ElementSep
